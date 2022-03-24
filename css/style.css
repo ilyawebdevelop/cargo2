@@ -8322,8 +8322,8 @@ html {
           flex-direction: column;
   -webkit-box-align: end;
       -ms-flex-align: end;
-          align-items: end;
-  -webkit-align-items: end;
+          align-items: flex-end;
+  -webkit-align-items: flex-end;
 }
 
 .header__chat-item a {

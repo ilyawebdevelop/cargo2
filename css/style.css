@@ -8571,12 +8571,12 @@ html {
   background-color: #252E79;
   padding-bottom: 70px;
   background-size: auto;
-  -webkit-background-repeat-y: no-repeat;
+  -webkit-background-repeat: repeat-x;
   -webkit-background-position: bottom center;
   -webkit-background-size: auto;
   background-position: bottom center;
   padding-bottom: 60px;
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
 }
 
 .steps__title {
@@ -8974,9 +8974,9 @@ html {
   background-position: bottom center;
   padding-top: 36px;
   padding-bottom: 90px;
-  background-repeat-y: no-repeat;
+  background-repeat: repeat-x;
   -webkit-background-size: auto;
-  -webkit-background-repeat-y: no-repeat;
+  -webkit-background-repeat: repeat-x;
   -webkit-background-position: bottom center;
 }
 

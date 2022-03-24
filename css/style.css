@@ -8323,6 +8323,7 @@ html {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
+  -webkit-align-items: end;
 }
 
 .header__chat-item a {
@@ -8507,6 +8508,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -8514,6 +8516,7 @@ html {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  -webkit-justify-content: end;
   min-height: 645px;
 }
 
@@ -8568,6 +8571,9 @@ html {
   background-color: #252E79;
   padding-bottom: 70px;
   background-size: auto;
+  -webkit-background-repeat-y: no-repeat;
+  -webkit-background-position: bottom center;
+  -webkit-background-size: auto;
   background-position: bottom center;
   padding-bottom: 60px;
   background-repeat-y: no-repeat;
@@ -8969,6 +8975,9 @@ html {
   padding-top: 36px;
   padding-bottom: 90px;
   background-repeat-y: no-repeat;
+  -webkit-background-size: auto;
+  -webkit-background-repeat-y: no-repeat;
+  -webkit-background-position: bottom center;
 }
 
 .news__slider {
@@ -15491,7 +15500,7 @@ html {
 
   .graph-modal__input-wrapper input,
   .graph-modal__input-wrapper textarea {
-    padding: 11px 10px 12px 50px;
+    padding: 11px 10px 12px 20px;
   }
 
   .graph-modal__input-wrapper {

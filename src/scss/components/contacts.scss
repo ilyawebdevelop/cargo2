@@ -1,0 +1,131 @@
+// Contacts
+.contacts {
+  padding-top: 30px;
+  padding-bottom: 67px;
+  &__top {
+    margin-bottom: 50px;
+  }
+  &__phone {
+
+    &-list {
+     margin-bottom: 30px;
+    }
+    &-title {     
+      font-weight: $light;     
+      line-height: 17px;    
+      display: flex;
+      align-items: center;
+      margin-right: 8px;
+      &::before {
+        content: '';
+        width: 20px;
+        height: 20px;
+        display: block;    
+        margin-right: 8px;
+      }
+      &.title_russia {
+        &::before {
+          background: url('@img/header/red-phone.svg') no-repeat center center / cover;
+        }     
+      }
+      &.title_china {
+        &::before {
+          background: url('@img/header/blue-phone.svg') no-repeat center center / cover;
+        }      
+      }
+    }
+    &-item {
+      display: flex;
+      a {
+        font-weight: $medium;
+        font-size: 16px;
+        line-height: 17px;
+        &:hover {
+          opacity: 0.8;
+        }
+        @media (max-width: 1199px) {
+          font-size: 14px;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 17px;
+      }
+    }
+  }
+  &__chat-item {
+    a {
+      color: $blue;
+      font-size: 14px;
+      line-height: 17px;
+      font-weight: $medium;
+      display: flex;
+      align-items: center;   
+      &::before {
+        display: block;
+        content: '';
+        width: 20px;
+        height: 20px;
+        margin-right: 6px;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 17px;
+    }
+    &.wechat {
+      a::before {
+        background: url('@img/header/chat.svg') no-repeat center center / cover;
+      }
+    }
+    &.mail {
+      a::before {
+        background: url('@img/header/mail.svg') no-repeat center center / cover;
+      }
+    }
+  }
+  &__adress {
+    &-list {
+      @media (max-width: 575px) {
+        margin-top: 40px;
+      }
+    }
+    &-item {
+      max-width: 240px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    &-title {     
+      font-weight: $medium;     
+      line-height: 17px;    
+      color: #322E45;
+      margin-bottom: 12px;
+    }
+    &-text {  
+      font-weight: $light;
+      line-height: 20px;  
+    }
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 25px;
+  }
+}
+.m-30 {
+  @media (max-width: 991px){
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

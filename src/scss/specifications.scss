@@ -1,0 +1,77 @@
+// Specifications
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: $main;
+  font-family: $font-family;
+  font-size: 14px;
+  font-weight: $regular;
+  background-color: #fff;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.main {
+	flex: 1 0 auto;
+}
+.footer {
+	flex: 0 0 auto;
+}
+h1, h2, h3, h4, h5, h6 { 
+  font-family: $font-family;  
+  color: $main;
+}
+h1 {
+  font-size: 72px!important;
+  font-weight: $black;
+  color: $white;
+  line-height: 80px;
+  span {
+    color: $orange;   
+    display: block;
+    font-size: 80px!important; 
+    @media (max-width: 575px) {
+      font-size: 65px!important;
+    }
+  }
+  @media (max-width: 575px) {
+    font-size: 60px!important;
+  }
+}
+h2 {
+  font-size: 36px!important;
+  font-weight: $extrabold;
+  color: $blue;
+  span {
+    color: $orange;    
+    font-weight: $semibold;
+  }
+  @media (max-width: 575px) {
+    font-size: 28px!important;
+  }
+}
+h3 {
+  color: $main;
+  font-size: 18px!important;
+  font-weight: $semibold;
+  @media (max-width: 767px) {
+    font-size: 16px!important;
+  }
+}
+a {
+  transition: all 0.2s ease;
+}
+
+
+
+
+

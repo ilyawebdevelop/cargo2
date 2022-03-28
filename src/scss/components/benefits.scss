@@ -1,0 +1,46 @@
+// Benefits
+.benefits {
+  padding-top: 60px;
+  padding-bottom: 166px;
+  &__title {
+    margin-bottom: 75px;
+    @media (max-width: 575px) {
+      margin-bottom: 25px;
+    }
+  }
+  &__list {
+   
+  }
+  &__item {
+    position: relative;
+    padding-left: 50px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      left: 0;
+      top: 0;
+      background: url('@img/benefits/chech-benefits.svg') no-repeat center center / cover;
+    }
+    &-title {     
+      font-weight: $semibold;
+      font-size: 16px;
+      line-height: 30px;   
+      margin-bottom: 8px;  
+    }
+    &-descr {       
+      line-height: 21px;    
+      color: $main-light;
+    }  
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+    } 
+  }
+  @media (max-width: 991px) {
+    padding-bottom: 100px;
+  }
+  @media (max-width: 575px) {
+    padding-bottom: 135px;
+  }
+}

@@ -1,0 +1,93 @@
+// Steps
+.steps {
+  position: relative;
+  top: -125px;
+  margin-bottom: -125px;
+  z-index: 0;
+  background-color: transparent;
+  &__wrapper {
+    background-color: #252E79;
+    padding-bottom: 70px;
+    background-image: url('@img/steps/cubes.png');
+    background-size: auto;
+    -webkit-background-repeat: repeat-x;
+    -webkit-background-position: bottom center;
+    -webkit-background-size: auto;
+    background-position: bottom center;
+    padding-bottom: 60px;
+    background-repeat: repeat-x;
+  }
+  &__title {
+    color: $white;   
+    margin-bottom: 45px;
+  }
+  &__item {
+    &-title {   
+      font-weight: $semibold;
+      font-size: 20px;
+      line-height: 24px;    
+      color: $white;      
+      margin-bottom: 2px;
+    }
+    &-descr {     
+      font-weight: $light;
+      font-size: 16px;
+      line-height: 24px;    
+      color: $white;
+    }
+    &-btn {
+      margin-top: 40px;
+      transition: opacity 0.5s linear;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+    img {
+      margin: 0 auto 20px; 
+      
+    }
+    &.main {
+      @media (max-width: 991px) {
+        margin-bottom: 20px;
+      }
+      .steps__item-title {
+        font-weight: $extrabold;
+        font-size: 30px;
+        line-height: 28px;       
+        color: $white;
+        margin-bottom: 6px;
+      }
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 50px;
+    }
+  }
+}
+.form-steps {
+  margin-top: 20px;
+  &__text {    
+    line-height: 21px; 
+    text-align: center;    
+    color: $white;    
+  }
+  input {
+    padding: 15px;   
+    width: 100%;
+    font-weight: $light;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main;
+    background-color: $white;
+    @media (max-width: 991px) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.steps__bg-rounded {
+  img {
+    width: -webkit-fill-available;
+    height: auto;
+  }  
+  height: auto;  
+}

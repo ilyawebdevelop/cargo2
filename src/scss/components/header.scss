@@ -1,0 +1,215 @@
+// Header
+.header {
+  padding: 10px 0px 0px;
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  &__top {
+    border-bottom: 1px solid #E4E5EF;
+    padding-bottom: 11px;
+  }
+  &__bottom {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    @media (max-width: 991px) {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+  }
+  &__lang:not(:last-child) {
+    margin-right: 6px;
+  }
+  &__lang.active {    
+    img {
+      width: 32px;
+      height: 32px;
+    }
+  }
+  &__lang img {
+    width: 24px;
+    height: 24px;
+  }
+  &__langs {
+    display: flex;
+    align-items: center;
+  }
+  &__phone-list {    
+    align-items: center;
+    padding-left: 40px;
+    @media (max-width: 1199px) {
+      padding-left: 0;
+    }
+  }
+  &__phone-item {
+    display: flex;
+    align-items: center;
+    a {
+      font-weight: $medium;
+      font-size: 16px;
+      line-height: 19px;
+      &:hover {
+        opacity: 0.8;
+      }
+      @media (max-width: 1199px) {
+        font-size: 14px;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+  &__phone-title {    
+    font-weight: $light;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+    &::before {
+      content: '';
+      width: 20px;
+      height: 20px;
+      display: block;      
+      margin-right: 8px;
+    }
+    &.title_russia {
+      &::before {
+        background: url('@img/header/red-phone.svg') no-repeat center center / cover;
+      }     
+    }
+    &.title_china {
+      &::before {
+        background: url('@img/header/blue-phone.svg') no-repeat center center / cover;
+      }      
+    }
+  }
+  &__chat-list {   
+    flex-direction: column;
+    align-items: flex-end;
+    -webkit-align-items: flex-end;
+  }
+  &__chat-item {    
+    a {
+      color: $blue;
+      font-size: 13px;
+      line-height: 16px;
+      font-weight: $medium;
+      display: flex;
+      align-items: center;
+      &::before {
+        display: block;
+        content: '';
+        width: 16px;
+        height: 16px;
+        margin-right: 6px;
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 4px;
+    }
+    &.wechat {
+      a::before {
+        background: url('@img/header/chat.svg') no-repeat center center / cover;
+      }
+    }
+    &.mail {
+      a::before {
+        background: url('@img/header/mail.svg') no-repeat center center / cover;
+      }
+    }
+  }
+}
+.header__nav {
+  &-list {    
+    justify-content: center;
+    padding-right: 37px;
+    @media (max-width: 1199px) {
+      padding-right: 0;
+    }
+  }
+  &-item {
+    a {
+      font-size: 18px;
+      line-height: 22px;
+      &:hover {
+        opacity: 0.7;
+      }
+      @media (max-width: 1199px) {
+        font-size: 16px;
+      }
+    }
+    &:not(:last-child) {
+      margin-right: 30px;
+      @media (max-width: 1199px) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+
+.overlay {
+  position: fixed;
+  background: #fff;
+  top: 0;
+  right: 0;
+  width: 320px;
+  height: 0%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .35s, visibility .35s;
+  overflow: hidden;
+  z-index: 777777;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 450px;
+  width: 300px;
+  padding-left: 35px;
+  padding-top: 30px;
+  padding-right: 39px;
+  overflow-y: auto;
+  z-index: 3;
+  -webkit-box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 1px 4px 8px 0px rgba(34, 60, 80, 0.2);
+  padding-bottom: 20px;
+}
+.header__menu-burger-wrapper {
+  a {
+    color: $main;
+  }
+}
+.header__menu-burger-item {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: $medium;
+}
+
+.header__menu-burger-list {
+  margin-bottom: 20px;
+  border-bottom: 1px solid $main-light;
+  padding-bottom: 10px; 
+}
+.header__chat-burger-list {
+  margin-bottom: 15px;
+}
+.header__phone-burger-list {
+  margin-bottom: 15px;
+  .header__phone-title {
+    font-size: 13px;
+  }
+  .header__phone-item {
+    a {
+      font-size: 13px;
+    }
+  }
+}
+.header__menu-burger-close {
+  margin-bottom: 30px;
+  cursor: pointer;
+}
